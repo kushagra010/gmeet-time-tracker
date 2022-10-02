@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.4.5",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/material": "^5.10.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -15,8 +18,8 @@
     "build": "INLINE_RUNTIME_CHUNK=false craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "lint": "eslint src/**/*.{js,jsx,ts,tsx} --max-warnings=0",
-    "pre-commit": "lint-staged && yarn lint && yarn build"
+    "lint:check": "eslint src/**/*.{js,jsx,ts,tsx} --max-warnings=0",
+    "pre-commit": "lint-staged && yarn lint:check && yarn build"
   },
   "eslintConfig": {
     "extends": [
