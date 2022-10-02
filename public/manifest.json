@@ -7,6 +7,12 @@
     "default_popup": "index.html",
     "default_title": "Google Meet Time Tracker"
   },
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["./static/js/content.js"]
+    }
+  ],
   "icons": {
     "16": "logo192.png",
     "48": "logo192.png",

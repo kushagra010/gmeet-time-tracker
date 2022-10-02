@@ -2,21 +2,22 @@
   "env": {
     "browser": true,
     "es2021": true,
-    "jest": true
+    "jest": true // needed to support jest
   },
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:import/recommended",
+    "plugin:import/recommended", // airbnb support
     "prettier",
-    "airbnb-typescript"
+    "airbnb-typescript" // airbnb support
   ],
   "overrides": [],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",
+    // airbnb support
     "project": ["./tsconfig.json"]
   },
   "settings": {
@@ -40,6 +41,7 @@
     "@typescript-eslint/no-unsafe-call": "off",
     "@typescript-eslint/no-unsafe-return": "off",
     "@typescript-eslint/no-explicit-any": "off",
+    // airbnb support
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
   }
 }
